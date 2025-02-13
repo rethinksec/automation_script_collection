@@ -1,0 +1,9 @@
+virustotal:
+  base_url: "https://www.virustotal.com/api/v3/"
+  api_key:
+    - "some_random_api_key"
+    # Add other API keys in new lines if you have more than one, the script will auto pick up those
+ipqs:
+  base_url: "https://ipqualityscore.com/api/json/ip/"
+  api_key: "some_random_api_key"
+    # Add other API keys in new lines if you have more than one, the script will auto pick up those
