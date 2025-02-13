@@ -107,8 +107,6 @@ if __name__ == "__main__":
 	# Wait for all threads to complete
 	for t in threads:
 		t.join()
-	year = datetime.now().year
-	month = "%02d" % datetime.now().month
-	day = "%02d" % datetime.now().day
-	all_result_df.to_csv(f"vt_result-{year}-{month}-{day}.csv")
+	now = int(datetime.now().timestamp())
+	all_result_df.to_csv(f"vt_result-{now}.csv")
 	print("Fully Completed!") 
